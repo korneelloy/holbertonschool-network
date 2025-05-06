@@ -1,2 +1,7 @@
 #!/usr/bin/env bash
-ss -tulnp | grep LISTEN
+# Bash script that displays listening ports
+echo "Active Internet connections (only servers)"
+ss -tulnp
+
+echo "Active UNIX domain sockets (only servers)"
+ss -xlnp
